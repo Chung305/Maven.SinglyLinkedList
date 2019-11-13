@@ -2,7 +2,7 @@ package com.zipcodewilmington.singlylinkedlist;
 
 public class Node<T> {
     private T data;
-    private Node next;
+    private Node<T> next;
 
     public Node(T data){
         this.data = data;
@@ -14,7 +14,7 @@ public class Node<T> {
 
     }
 
-    public void setNext(Node next){
+    public void setNext(Node<T> next){
         this.next = next;
 
     }

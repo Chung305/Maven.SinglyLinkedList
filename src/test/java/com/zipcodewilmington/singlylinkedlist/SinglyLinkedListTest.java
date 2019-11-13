@@ -50,5 +50,10 @@ public class SinglyLinkedListTest {
         Assert.assertTrue(removed);
     }
 
+    @Test
+    public void testContains(){
+
+    }
+
 
 }

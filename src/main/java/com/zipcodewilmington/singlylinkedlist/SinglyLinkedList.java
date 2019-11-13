@@ -18,17 +18,28 @@ public class SinglyLinkedList<T> {
         size++;
     }
 
-    public Boolean remove(T node){
+    public Boolean remove(T data){
         Node current = this.head;
         Node previous = null;
 
         while(current !=  null){
-            if(current.getData() == node){
+            if(current.getData() == data){
                 previous.setNext(current.getNext());
                 size--;
                 return true;
             }
             previous = current;
+            current = current.getNext();
+        }
+        return false;
+    }
+    public Boolean contains(T data){
+        Node current = this.head;
+
+        while(current.getNext() != null){
+            if(current.getData() == data){
+                return true;
+            }
             current = current.getNext();
         }
         return false;

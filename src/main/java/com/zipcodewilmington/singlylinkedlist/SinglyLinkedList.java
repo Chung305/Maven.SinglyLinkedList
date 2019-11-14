@@ -101,20 +101,20 @@ public class SinglyLinkedList<T> implements Cloneable{
         return null;
     }
 
-//    public Node reverse(Node node){
-//        Node previous = null;
-//        Node current = this.head;
-//        Node next = null;
-//
-//        while(current != null){
-//            next = current.getNext();
-//            current.getNext() = previous;
-//            previous = current;
-//            current = next;
-//        }
-//        node = previous;
-//        return node;
-//    }
+    public Node reverse(Node node){
+        Node previous = null;
+        Node current = this.head;
+        Node next = current;
+
+        while(current != null){
+            next = next.getNext();
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+
+        return previous;
+    }
 
     protected Object clone() throws CloneNotSupportedException{
         return super.clone();

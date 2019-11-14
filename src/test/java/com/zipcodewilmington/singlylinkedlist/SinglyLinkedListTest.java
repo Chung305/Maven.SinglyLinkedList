@@ -144,7 +144,7 @@ public class SinglyLinkedListTest {
 
 
     }
-    /////Check the reverse method<<<<<<<<<<
+    ///Check the reverse method<<<<<<<<<<
     @Test
     public void testReverse(){
         //given
@@ -153,11 +153,10 @@ public class SinglyLinkedListTest {
         linkedList.add("Sian");
         linkedList.add("Eric");
 
-        //when
-        linkedList.reverse(linkedList.getTail());
+
 
         //then
-        Assert.assertEquals("Eric", linkedList.getHead().getData());
+        Assert.assertEquals("Eric", linkedList.reverse(linkedList.getHead()).getData());
     }
 
 

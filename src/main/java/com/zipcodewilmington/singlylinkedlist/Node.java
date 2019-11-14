@@ -1,8 +1,8 @@
 package com.zipcodewilmington.singlylinkedlist;
 
 public class Node<T> {
-    private T data;
-    private Node next;
+     T data;
+     Node next;
 
     public Node(T data){
         this.data = data;

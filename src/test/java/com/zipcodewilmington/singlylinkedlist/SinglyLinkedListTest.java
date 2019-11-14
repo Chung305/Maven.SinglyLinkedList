@@ -9,51 +9,45 @@ import org.junit.Test;
 public class SinglyLinkedListTest {
     @Test
     public void testConstructor(){
-        //Given
         String expected = "Chung";
         SinglyLinkedList<String> linkedList = new SinglyLinkedList<String>(expected);
 
-
-        Assert.assertNull(linkedList.getHead().getNext());
         Assert.assertEquals(expected, linkedList.getHead().getData());
-
     }
 
     @Test
     public void testAdd(){
         //given
-        String expected = "Chung";
-        String dataToAdd = "Chung2.0";
-        SinglyLinkedList<String> linkedList = new SinglyLinkedList<String>(expected);
+        SinglyLinkedList<Integer> linkedList = new SinglyLinkedList<Integer>();
 
         //when
-        linkedList.add(new Node<String>(dataToAdd));
+        linkedList.add(100);
+        linkedList.add(200);
+        Integer expected = 1;
 
         //then
-        Assert.assertEquals(dataToAdd, linkedList.getHead().getData());
-        Assert.assertEquals(expected, linkedList.getHead().getNext().getData());
+        Assert.assertEquals(expected, linkedList.getSize());
+
     }
 
     @Test
     public void testRemove(){
         //given
-        SinglyLinkedList<Integer> linkedList = new SinglyLinkedList<Integer>(0);
-        Integer remove = 3;
-
-        for(int i = 1; i < 5; i++)
-            linkedList.add(new Node<Integer>(i));
+        SinglyLinkedList<String> linkedList = new SinglyLinkedList<String>();
+        linkedList.add("Chung");
+        linkedList.add("Sian");
+        linkedList.add("Eric");
 
         //when
-        Boolean removed = linkedList.remove(remove);
+        Boolean remove = linkedList.remove(2);
 
         //then
-        Assert.assertTrue(removed);
-    }
-
-    @Test
-    public void testContains(){
+        Assert.assertTrue(remove);
 
     }
+
+
+
 
 
 }

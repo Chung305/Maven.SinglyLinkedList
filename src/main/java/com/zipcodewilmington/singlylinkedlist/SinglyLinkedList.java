@@ -3,7 +3,7 @@ package com.zipcodewilmington.singlylinkedlist;
 /**
  * Created by leon on 1/10/18.
  */
-public class SinglyLinkedList<T> {
+public class SinglyLinkedList<T> implements Cloneable{
     private Node head = null;
     private Integer size;
 
@@ -20,11 +20,11 @@ public class SinglyLinkedList<T> {
     public void add(T data){
         if(head != null){
             Node current = head;
-            while(current.getNext() != null){
+            while(current != null){
                 if(current.getNext() == null){
                     current.setNext(new Node<T>(data));
                     size++;
-
+                    break;
                 }
                 current = current.getNext();
             }
@@ -37,6 +37,7 @@ public class SinglyLinkedList<T> {
 
     public Boolean remove(Integer index){
         Node current = this.head;
+        Node previous = null;
         Integer counter = 0;
 
         while(current != null){
@@ -47,16 +48,15 @@ public class SinglyLinkedList<T> {
             }
             else if(counter == index - 1){
 
-
+                previous.setNext(current.getNext());
+                size--;
+                return true;
             }
+            counter++;
+            previous = current;
+            current = current.getNext();
         }
-
-
-
-
-
         return false;
-
     }
     public Boolean contains(T data){
         Node current = this.head;
@@ -72,28 +72,27 @@ public class SinglyLinkedList<T> {
 
     public Integer find(T data){
         Node current = this.head;
-        Integer index = 0;
-
+        Integer index = 1;
 
         while(current != null){
-            if(current.getData() == data)
+            if(current.getData() == data){
                 return index;
-
-            current = current.getNext();
+            }
             index++;
+            current = current.getNext();
         }
 
-        return -1;
+       return -1;
     }
 
-    public Node<T> getByIndex(Integer index) {
+    public Object getByIndex(Integer index) {
 
         Node current = this.head;
-        Integer currentIndex = 0;
+        Integer currentIndex = 1;
 
         while(current != null){
             if(currentIndex.equals(index))
-                return current;
+                return current.getData();
 
             current = current.getNext();
             currentIndex++;
@@ -101,6 +100,39 @@ public class SinglyLinkedList<T> {
 
         return null;
     }
+
+//    public Node reverse(Node node){
+//        Node previous = null;
+//        Node current = this.head;
+//        Node next = null;
+//
+//        while(current != null){
+//            next = current.getNext();
+//            current.getNext() = previous;
+//            previous = current;
+//            current = next;
+//        }
+//        node = previous;
+//        return node;
+//    }
+
+    protected Object clone() throws CloneNotSupportedException{
+        return super.clone();
+    }
+
+    public Node getTail(){
+        Node current = this.head;
+
+        while(current != null){
+            if(current.getNext() == null){
+                return current;
+            }
+            current = current.getNext();
+        }
+        return null;
+    }
+
+
 
     public Node<T> getHead() {
         return head;
@@ -112,6 +144,14 @@ public class SinglyLinkedList<T> {
 
     public Integer getSize() {
         return size;
+    }
+
+    @Override
+    public String toString() {
+        return "SinglyLinkedList{" +
+                "head=" + head +
+                ", size=" + size +
+                '}';
     }
 
 }

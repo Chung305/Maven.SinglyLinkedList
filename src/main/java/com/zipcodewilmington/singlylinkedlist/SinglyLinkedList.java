@@ -5,6 +5,8 @@ package com.zipcodewilmington.singlylinkedlist;
  */
 public class SinglyLinkedList<T> implements Cloneable{
     private Node head = null;
+    private Node tail;
+
     private Integer size;
 
     public SinglyLinkedList(T data){
@@ -20,6 +22,7 @@ public class SinglyLinkedList<T> implements Cloneable{
     public void add(T data){
         if(head != null){
             Node current = head;
+
             while(current != null){
                 if(current.getNext() == null){
                     current.setNext(new Node<T>(data));
@@ -62,7 +65,7 @@ public class SinglyLinkedList<T> implements Cloneable{
         Node current = this.head;
 
         while(current != null){
-            if(current.getData() == data){
+            if(current.getData() == data|| current.getNext() == data){
                 return true;
             }
             current = current.getNext();
@@ -129,6 +132,10 @@ public class SinglyLinkedList<T> implements Cloneable{
             }
             current = current.getNext();
         }
+        return null;
+    }
+
+    public Node sort(){
         return null;
     }
 

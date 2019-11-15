@@ -72,7 +72,8 @@ public class SinglyLinkedListTest {
         linkedList.add("Chung");
         linkedList.add("Sian");
         linkedList.add("Eric");
-
+        linkedList.add("Brian");
+        System.out.println(linkedList.toString());
         //then
         Assert.assertTrue(linkedList.contains("Chung"));
         Assert.assertTrue(linkedList.contains("Sian"));
@@ -157,6 +158,21 @@ public class SinglyLinkedListTest {
 
         //then
         Assert.assertEquals("Eric", linkedList.reverse(linkedList.getHead()).getData());
+    }
+
+    @Test
+    public void testSort(){
+        //given
+        SinglyLinkedList<String> linkedList = new SinglyLinkedList<String>();
+        linkedList.add("Chung");
+        linkedList.add("Sianss");
+        linkedList.add("Eric");
+
+        System.out.println(linkedList.getHead().toString());
+
+        linkedList.sort();
+
+        System.out.println(linkedList.getHead().toString());
     }
 
 

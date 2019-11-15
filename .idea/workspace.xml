@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4f0c6f35-1ac5-49ea-b41e-20445c07c5c6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedListTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,8 +22,12 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedList.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="193">
-                  <caret line="137" column="23" lean-forward="true" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
+                <state relative-caret-position="454">
+                  <caret line="138" column="20" selection-start-line="138" selection-start-column="20" selection-end-line="138" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#3205#3206#0" expanded="true" />
+                    <element signature="e#3232#3233#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -376,14 +378,11 @@
       <workItem from="1573776584237" duration="254000" />
       <workItem from="1573829603023" duration="750000" />
       <workItem from="1573843692018" duration="1714000" />
-      <workItem from="1573845878250" duration="3325000" />
+      <workItem from="1573845878250" duration="4083000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SinglyLinkedListTest_testSort - 2019.11.15 at 15h 05m 37s.xml">
-      <configuration name="SinglyLinkedListTest.testSort" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SinglyLinkedListTest_testSort - 2019.11.15 at 15h 05m 48s.xml">
       <configuration name="SinglyLinkedListTest.testSort" configurationId="JUnit" />
     </history-entry>
@@ -411,13 +410,15 @@
     <history-entry file="SinglyLinkedListTest_testSort - 2019.11.15 at 15h 20m 09s.xml">
       <configuration name="SinglyLinkedListTest.testSort" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SinglyLinkedListTest_testSort - 2019.11.15 at 15h 20m 18s.xml">
+      <configuration name="SinglyLinkedListTest.testSort" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35915000" />
+    <option name="totallyTimeSpent" value="36673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="36" y="23" width="1610" height="983" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18494898" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -429,12 +430,12 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31537598" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31537598" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39955106" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2760943" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2760943" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
@@ -505,8 +506,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="137" column="23" lean-forward="true" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
+        <state relative-caret-position="454">
+          <caret line="138" column="20" selection-start-line="138" selection-start-column="20" selection-end-line="138" selection-end-column="20" />
+          <folding>
+            <element signature="e#3205#3206#0" expanded="true" />
+            <element signature="e#3232#3233#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
